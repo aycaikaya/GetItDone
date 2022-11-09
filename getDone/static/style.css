@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
+
+
+
+.navbar-brand{
+    float: left;
+
+}
+
+header{
+    background-color: #9400D3;
+}
+
+.navbar-item{
+    padding-left: 0.5rem;
+
+}
+
+.navbar-brand{
+    font-family: 'Solway', serif;
+    padding-left: 0.75rem;
+}
+
+.navbar-link{
+    color: 	#FFFFFF;
+}
+
+
+.navbar-link:hover{
+    text-decoration: none;
+    color: #00FFFF;
+    transition: color 0.3s ease;
+}

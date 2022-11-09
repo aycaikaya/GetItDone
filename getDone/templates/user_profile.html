@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class = "content-section">
+    <form method="post">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend style="color:darkviolet;font-weight:bold;font-size:x-large;margin-left: auto;margin-right: auto;display:inline-block" class="border--bottom mb-4">Sign In</legend>
+            {{ form.as_p }}
+        </fieldset>
+        <div class="form-group">
+            <button style="font-weight:bold;font-size:large;margin-left: auto;margin-right: auto;display:block" class="btn btn-outline-info" type="submit">Login</button>
+        </div>
+    </form>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Need an account ? <a style="font-weight: bold" class="ml-2" href="/create/project">Sign Up Now</a>
+        </small>
+    </div>
+</div>
+{% endblock content %}

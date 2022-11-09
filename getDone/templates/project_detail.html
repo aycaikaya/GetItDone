@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+                <div style="font-size: large;margin-top:auto;margin-bottom: auto;color: darkviolet">
+                    <a class="mr-2" href="#">{{ board.name }}</a>
+                    </div>
+                <div>
+                    <a class="mr-2" href="#">{{ board.project_status }}</a>
+                </div>
+                <div>
+                     class="mr-2" href="#">{{ board.current_or_not }}
+                </div>
+              <small class="text-muted">{{ board.due_date|date:"F d, Y" }}</small>
+            </div>
+            <h2>class="article-title" >{{ board.users }}</h2>
+            <p class="article-content">{{ board.description }}</p>
+          </div>
+        </article>
+{% endblock content %}
